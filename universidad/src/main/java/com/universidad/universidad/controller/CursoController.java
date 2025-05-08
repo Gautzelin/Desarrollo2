@@ -30,7 +30,7 @@ public class CursoController {
         return cursoRepository.cursosPorProfesor(idProfesor);
     }
 
-    @GetMapping
+    @GetMapping("/todos")
     public List<Curso> listarTodos() {
         return cursoRepository.obtenerTodosLosCursos();
     }
